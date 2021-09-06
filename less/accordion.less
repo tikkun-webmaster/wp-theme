@@ -1,0 +1,41 @@
+h3.accordion-title {
+	font-size:20px;
+	font-weight:500;
+  margin-bottom: 12px;
+}
+
+.accordion-title {
+	padding:10px;
+	cursor:pointer;
+	color:white;
+	background-color:@blue4;
+
+	-webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+
+	&::after {
+      content: ' \25bc';
+      font-size: 12px;
+      padding-bottom: 20px;
+      position: relative;
+      bottom: 2px;
+      left: 5px;
+    }
+}
+
+.accordion-title.open {
+	background-color:@orange;
+
+	&::after {
+      content: ' \25b2';
+      font-size: 12px;
+      padding-bottom: 20px;
+      position: relative;
+      bottom: 2px;
+      left: 5px;
+    }
+
+}

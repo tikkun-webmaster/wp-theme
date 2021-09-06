@@ -1,0 +1,78 @@
+.primary-featured-post {
+	img {
+		margin-bottom: 1em;
+    	width: 100%;
+	}
+}
+
+#tikkun_magazine_artists {
+  aside {
+    background-color: @tan;
+    position:relative;
+    width:23.5%;
+    padding-top: 23.5%;
+    margin-bottom:2%;
+    margin-left:2%;
+    overflow:hidden;
+
+    @media screen only and (max-width:425px) {
+        margin: 0 0 10px 0 !important;
+        width: 50%;
+        padding-top: 50%;
+    }
+
+    &.widget_text > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: @white;
+        padding:20px;
+    }
+
+    &.widget_media_image {
+    	&> div,
+    	&> img {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        bottom: 0;
+	        right: 0;
+	        color: @white;
+	    }
+
+	    p {
+	    	display:none;
+	    }
+
+	    .alignnone {
+	    	margin:0;
+	    }
+    }
+
+    .widget_media_image > 
+
+    a {
+      color:darken(@white, 10%)
+    }
+
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8),
+    &:nth-child(10) {
+      background-color: @blue4;
+    }
+
+    &:nth-child(4) {
+      margin-left:0;
+    }
+
+    &:nth-child(1),
+    &:nth-child(8) {
+      margin-left:25.5%;
+    }
+  }
+}

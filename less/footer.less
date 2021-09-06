@@ -1,0 +1,97 @@
+#before-footer {
+	max-width:unset;
+	width:100%;
+	padding:0;
+	display:table;
+
+	aside {
+		display:inline-block;
+		width:20vw;
+		height:150px;
+		margin:0;
+		float:unset;
+		display: table-cell;
+		vertical-align: middle;
+		margin:0;
+		float:unset;
+		text-align:center;
+		font-size:24px;
+		font-family:@sans;
+		background-image:linear-gradient(to right, red , purple);
+
+		p {
+			margin:0;
+			font-size:24px;
+		}
+
+		a {
+			color:white;
+			display:block;
+			padding: 25px 5px;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+
+		@media screen and (max-width:768px) {
+			width: 100%;
+		    height: auto;
+		    display: block;
+
+		    .textwidget {
+			    padding: 15px 5px;
+			}
+		}
+	}
+
+	aside:nth-child(1) {
+		
+			background:@blue2;
+			&:hover {
+				background:darken(@blue2,10%);
+			}
+		
+	}
+	aside:nth-child(2) {
+		
+			background:@orange;
+			&:hover {
+				background:darken(@orange,10%);
+			}
+		
+	}
+	aside:nth-child(3) {
+		
+			background:@blue1;
+			&:hover {
+				background:darken(@blue1,10%);
+			}
+		
+	}
+	aside:nth-child(4) {
+		
+			background:@blue3;
+			&:hover {
+				background:darken(@blue3,10%);
+			}
+		
+	}
+	aside:nth-child(5) {
+		
+			background:@blue4;
+			&:hover {
+				background:darken(@blue4,10%);
+			}
+		
+	}
+}
+
+#site-footer {
+	.input-append {
+		width:100%;
+	}
+}
+
+#wpstats {
+	display:none;
+}

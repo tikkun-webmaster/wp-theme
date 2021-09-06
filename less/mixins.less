@@ -1,0 +1,138 @@
+// Some mixin utilities
+.twocolumn {
+  display: block;
+  width: 48.93617021%;
+  min-height: 28px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+  &:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  &:nth-child( 2n + 1 ) {
+    clear: left;
+  }
+}
+.onecolumn {
+  clear: both;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.heading-treatment {
+  text-align: center;
+  font-family: @sans;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: @black;
+  margin-bottom: 2em;
+
+  span {
+    border-bottom: 4px solid @red;
+    padding-bottom: 0.25em;
+  }
+}
+
+// goes on the containing element
+// element
+//   a
+//     button
+.button-styles {
+  a {
+  }
+  button {
+    background: @red;
+    border: 4px solid transparent;
+    line-height: 1;
+    padding: 1em 1.5em;
+    color: @white;
+    font-family: @sans;
+    text-transform: uppercase;
+
+    a,
+    a:visited {
+      color:@white;
+    }
+
+    &:hover {
+      background:saturate(@blue4,30%);
+    }
+
+    &.secondary {
+      background: @red;
+      &:hover {
+        background-color:saturate(@orange,30%);
+      }
+    }
+
+    &.alt1 {
+      background: @red;
+
+      &:hover {
+        background:darken(@orange,10%);
+      }
+    }
+
+    &.alt2 {
+      background: @white;
+      border-color:@blue4;
+      color:@blue4;
+
+      &:hover {
+        background:saturate(@white,30%);
+        border-color:saturate(@blue4,30%);
+        color:saturate(@blue4,30%);
+      }
+    }
+  }
+}
+
+.homepage-border {
+  // border-bottom: 5px @blue4 solid;
+}
+
+.homepage-section-header {
+  .homepage-border;
+  font-family: @sans;
+  color: @blue2;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  font-size: 1.3em;
+}
+
+
+.prominence-sponsored-tag {
+  content: 'sponsored';
+  text-transform: uppercase;
+  background-color: lighten(@red,10%);
+  color: @white;
+  padding: .25em .5em;
+  display: inline-block;
+}
+
+.prominence-commentary-tag {
+  content: 'commentary';
+  text-transform: uppercase;
+  background-color: lighten(@blue4,10%);
+  color: @white;
+  padding: .25em .5em;
+  display: inline-block;
+}
+
+.prominence-bigger-tag {
+  font-size: 12px;
+}
+.prominence-smaller-tag {
+  font-size: 10px;
+}
+
+// Copied from Largo https://github.com/INN/Largo/blob/master/less/inc/mixins.less#L197
+.translate(@x, @y) {
+  -webkit-transform: translate(@x, @y);
+     -moz-transform: translate(@x, @y);
+      -ms-transform: translate(@x, @y);
+       -o-transform: translate(@x, @y);
+          transform: translate(@x, @y);
+}
