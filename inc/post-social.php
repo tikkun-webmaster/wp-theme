@@ -36,7 +36,7 @@ if ( ! function_exists( 'tikkun_post_social_links' ) ) {
 	    $has_linkedin_url = isset($tikkun_meta_box_linkedin_url) && $tikkun_meta_box_linkedin_url !== '';
 	    
 	    if ($has_facebook_url || $has_twitter_url || $has_linkedin_url) {
-            $output = '<div class="largo-follow post-social clearfix">';
+            $output = '<div class="largo-follow post-social clearfix"><h2>Share on Social Media</h2>';
             
             if ($has_facebook_url) {
                 $output .= '<span class="facebook"><a target="_blank" href="' . $tikkun_meta_box_facebook_url . '"><i class="icon-facebook"></i><span class="hidden-phone">Share</span></a></span>';
