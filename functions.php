@@ -12,6 +12,7 @@ $includes = array(
 		'/inc/custom-sidebars.php',
 		'/inc/widgets/tikkun-posts-by-top-tag.php',
 		'/inc/widgets/tikkun-recent-popular-countdown.php',
+		'/inc/post-social.php',
 	);
 foreach ( $includes as $include ) {
 		require_once( get_stylesheet_directory() . $include );

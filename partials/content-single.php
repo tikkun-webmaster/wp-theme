@@ -42,9 +42,8 @@
 	<?php do_action('largo_after_post_content'); ?>
 
 	<?php
-			if ( !of_get_option( 'single_social_icons' ) == false ) {
-				largo_post_social_links();
-			}
+			tikkun_post_social_links();
+
 		?>
 
 </article>

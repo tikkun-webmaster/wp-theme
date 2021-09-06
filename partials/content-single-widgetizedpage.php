@@ -53,9 +53,7 @@
 	<footer class="post-meta bottom-meta">
 
 		<?php
-			if ( !of_get_option( 'single_social_icons' ) == false ) {
-				largo_post_social_links();
-			}
+			tikkun_post_social_links();
 		?>
 
 	</footer><!-- /.post-meta -->
